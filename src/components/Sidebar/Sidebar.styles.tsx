@@ -7,18 +7,24 @@ export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
-  gap: 10px;
+  gap: 4px;
 `;
 
-export const SidebarItem = styled.button<{ $active: boolean }>`
+export const SidebarItemContainer = styled.div`
+  
+`;
+
+export const SidebarItem = styled.a<{ $active: boolean }>`
   background-color: ${({ $active }) =>
     $active ? "var(--sidebar-accent)" : "var(--sidebar)"};
   color: var(--sidebar-foreground);
   border: none;
-  font-size: 1em;
-  width: 100%;
-  padding: 10px 20px;
+  font-size: 0.875em;
+  font-weight: 500;
+  width: calc(100% - 40px);
+  padding: 0 8px;
+  text-align: left;
+  line-height: calc(1.25 - .875)
 
   &:hover,
   :focus {
