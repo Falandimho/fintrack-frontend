@@ -6,16 +6,21 @@ export function Sidebar() {
   const items = ["Relatórios", "Lançamentos", "Categorias", "Novo lançamento"];
 
   return (
-    <Styled.Sidebar>
-      {items.map((item) => (
-        <Styled.SidebarItem
-          key={item}
-          $active={activeItem === item}
-          onClick={() => setActiveItem(item)}
-        >
-          {item}
-        </Styled.SidebarItem>
-      ))}
-    </Styled.Sidebar>
+    <>
+      <Styled.Sidebar>
+        <Styled.SidebarItemContainer>
+          <p>Navegação</p>
+          {items.map((item) => (
+            <Styled.SidebarItem
+              key={item}
+              $active={activeItem === item}
+              onClick={() => setActiveItem(item)}
+            >
+              {item}
+            </Styled.SidebarItem>
+          ))}
+        </Styled.SidebarItemContainer>
+      </Styled.Sidebar>
+    </>
   );
 }
