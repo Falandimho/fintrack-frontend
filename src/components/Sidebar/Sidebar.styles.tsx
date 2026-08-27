@@ -23,20 +23,12 @@ export const SidebarItemContainer = styled.div`
   box-sizing: border-box;
 `;
 
-// export const SidebarIcon = styled.svg<{ $}`
-
-// `;
-
-export const SidebarLista = styled.ul`
+export const SidebarList = styled.ul`
   width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 4px;
-`;
-
-export const SidebarItem = styled.li`
-  padding: 8px;
 `;
 
 export const SidebarLink = styled.a<{ $active: boolean }>`
@@ -46,9 +38,14 @@ export const SidebarLink = styled.a<{ $active: boolean }>`
   border: none;
   border-radius: calc(var(--radius) - 2px);
   font-size: 0.875em;
-  font-weight: 400;
+  font-weight: ${({ $active }) =>
+    $active ? "var(--font-weight-medium)" : "var(--font-weight-semi-bold)"};
+  line-height: 1.15;
   padding: 8px;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
   &:hover,
   :focus {
@@ -57,9 +54,9 @@ export const SidebarLink = styled.a<{ $active: boolean }>`
   }
 `;
 
-export const Navegacao = styled.div`
+export const Nav = styled.div`
   color: color-mix(in oklab, var(--sidebar-foreground) 70%, transparent);
-  font-weight: medium;
+  font-weight: var(--font-weight-medium);
   font-size: var(--text-xs);
   padding: 0px 8px;
 `;
