@@ -9,8 +9,21 @@ export const Sidebar = styled.div`
   align-items: center;
   gap: 4px;
   padding: 8px;
-  box-sizing: border-box;
 `;
+
+export const SidebarHeader = styled.div`
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center
+  gap: 5px;
+`;
+
+export const SidebarLogo = styled.div`
+  background-color: var(--foreground);
+  border-radius: var(--radius)
+  padding: 
+`
 
 export const SidebarItemContainer = styled.div`
   width: 100%;
@@ -20,7 +33,6 @@ export const SidebarItemContainer = styled.div`
   gap: 4px;
   padding: 8px;
   position: relative;
-  box-sizing: border-box;
 `;
 
 export const SidebarList = styled.ul`

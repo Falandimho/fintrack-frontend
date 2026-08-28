@@ -1,6 +1,12 @@
 import { useState } from "react";
 import * as Styled from "./Sidebar.styles.tsx";
-import { ChartColumn, ListChecks, Tags, CirclePlus } from "lucide-react";
+import {
+  ChartColumn,
+  ListChecks,
+  Tags,
+  CirclePlus,
+  PiggyBank,
+} from "lucide-react";
 
 export function Sidebar() {
   const [activeItem, setActiveItem] = useState("Relatórios");
@@ -13,7 +19,7 @@ export function Sidebar() {
     {
       label: "Lançamentos",
       icon: ListChecks,
-      path: "/lançamentos",
+      path: "/lancamentos",
     },
     {
       label: "Categorias",
@@ -30,6 +36,11 @@ export function Sidebar() {
   return (
     <>
       <Styled.Sidebar>
+        <Styled.SidebarHeader>
+          <PiggyBank />
+          <p>Fintrack</p>
+        </Styled.SidebarHeader>
+
         <Styled.SidebarItemContainer>
           <Styled.Nav>Navegação</Styled.Nav>
           <Styled.SidebarList>
@@ -43,7 +54,7 @@ export function Sidebar() {
                     $active={activeItem === item.label}
                     onClick={() => setActiveItem(item.label)}
                   >
-                    <Icon size={14} />
+                    <Icon size={16} />
                     {item.label}
                   </Styled.SidebarLink>
                 </li>
