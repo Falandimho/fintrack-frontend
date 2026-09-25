@@ -15,9 +15,26 @@ export const SidebarHeader = styled.div`
   width: 100%;
   padding: 8px;
   display: flex;
+  gap: 10px;
   align-items: center
-  gap: 5px;
 `;
+
+export const SidebarTitle = styled.div`
+  width: fit-content;
+
+  & h4 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+    
+  }
+
+  & p {
+    font-size: var(--text-xs);
+    color: var(--muted-foreground)
+  }
+`;
+
 
 export const SidebarLogo = styled.div`
   background-color: var(--foreground);

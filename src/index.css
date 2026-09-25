@@ -3,7 +3,7 @@
   --font-mono:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-display: Sora,ui-sans-serif,system-ui,sans-serif;
   --default-font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --color-red-500: oklch(63.7% 0.237 25.331);
   --color-red-600: oklch(57.7% 0.245 27.325);

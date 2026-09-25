@@ -38,7 +38,10 @@ export function Sidebar() {
       <Styled.Sidebar>
         <Styled.SidebarHeader>
           <PiggyBank />
-          <p>Fintrack</p>
+          <Styled.SidebarTitle>
+            <h4>Finanças</h4>
+            <p>Painel Pessoal</p>
+          </Styled.SidebarTitle>
         </Styled.SidebarHeader>
 
         <Styled.SidebarItemContainer>
