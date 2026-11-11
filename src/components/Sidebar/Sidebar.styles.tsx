@@ -16,7 +16,7 @@ export const SidebarHeader = styled.div`
   padding: 8px;
   display: flex;
   gap: 10px;
-  align-items: center
+  align-items: center;
 `;
 
 export const SidebarTitle = styled.div`
@@ -26,21 +26,19 @@ export const SidebarTitle = styled.div`
     font-weight: var(--font-weight-bold);
     font-size: var(--text-sm);
     line-height: var(--text-sm--line-height);
-    
   }
 
   & p {
     font-size: var(--text-xs);
-    color: var(--muted-foreground)
+    color: var(--muted-foreground);
   }
 `;
-
 
 export const SidebarLogo = styled.div`
   background-color: var(--foreground);
   border-radius: var(--radius)
   padding: 
-`
+`;
 
 export const SidebarItemContainer = styled.div`
   width: 100%;
@@ -88,4 +86,11 @@ export const Nav = styled.div`
   font-weight: var(--font-weight-medium);
   font-size: var(--text-xs);
   padding: 0px 8px;
+`;
+
+export const ProfileContainer = styled.div`
+  margin-top: auto;
+  width: 100%;
+  border: 1px solid;
+  padding: 8px;
 `;

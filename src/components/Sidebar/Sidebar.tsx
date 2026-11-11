@@ -6,6 +6,7 @@ import {
   Tags,
   CirclePlus,
   PiggyBank,
+  UserCog,
 } from "lucide-react";
 
 export function Sidebar() {
@@ -65,6 +66,9 @@ export function Sidebar() {
             })}
           </Styled.SidebarList>
         </Styled.SidebarItemContainer>
+        <Styled.ProfileContainer>
+            <UserCog/>
+        </Styled.ProfileContainer>
       </Styled.Sidebar>
     </>
   );
